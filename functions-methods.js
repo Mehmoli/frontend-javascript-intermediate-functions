@@ -9,6 +9,7 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
+
 console.log("------------Opdracht 1-----------------");
 
 function getEmailDomein(email) {
@@ -17,6 +18,14 @@ function getEmailDomein(email) {
 const emailDomein =  getEmailDomein("a.wiersma@outlook.com");
 const domein = emailDomein [1];
 console.log(domein);
+=======
+function getEmailDomein(email)  {
+    return email.split("@");
+}
+const output = getEmailDomein("a.wiersma@outlook.com");
+console.log (output[1]);
+const email = "n.eeken@novi-education.nl";
+
 
 
 /* Opdracht  2 */
