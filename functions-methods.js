@@ -9,7 +9,14 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
+console.log("------------Opdracht 1-----------------");
 
+function getEmailDomein(email) {
+    return  email.split("@");
+}
+const emailDomein =  getEmailDomein("a.wiersma@outlook.com");
+const domein = emailDomein [1];
+console.log(domein);
 
 
 /* Opdracht  2 */
@@ -20,7 +27,18 @@
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
+console.log("------------Opdracht 2-----------------");
 
+function typeOfEmail (email) {
+  if (email.includes("@novi-")) {
+      console.log("Student")
+  } else if (email.includes("@novi.")){
+      console.log("Medewerker");
+  } else {
+      console.log("Extern");
+  }
+}
+typeOfEmail("novi.nlaapjesk@outlook.com");
 
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
@@ -34,3 +52,25 @@
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+console.log("------------Opdracht 3-----------------");
+
+function checkEmailValidity(email) {
+    const isValid = email.includes("@") && email.includes(".") && !email.includes(",") && email.charAt((email.length - 1)) !== ".";
+    // const isNotValid = email.includes(",") && email.charAt((email.length - 1)) === ".";
+
+    // console.log(isNotValid);
+    return isValid;
+
+}
+const emailValid = checkEmailValidity("tes.smellink@novi.nl");
+
+console.log(emailValid);
+
+
+// const checkValue = email.includes("@");
+// console.log(checkValue);
+// const checkDot = email.includes(".");
+// console.log(checkDot);
+// const checkComma = email.includes(",");
+// console.log(checkComma);
