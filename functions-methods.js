@@ -18,14 +18,6 @@ function getEmailDomein(email) {
 const emailDomein =  getEmailDomein("a.wiersma@outlook.com");
 const domein = emailDomein [1];
 console.log(domein);
-=======
-function getEmailDomein(email)  {
-    return email.split("@");
-}
-const output = getEmailDomein("a.wiersma@outlook.com");
-console.log (output[1]);
-const email = "n.eeken@novi-education.nl";
-
 
 
 /* Opdracht  2 */
