@@ -78,10 +78,3 @@ console.log(emailValidThird);
 console.log(emailValidFourth);
 
 
-
-// const checkValue = email.includes("@");
-// console.log(checkValue);
-// const checkDot = email.includes(".");
-// console.log(checkDot);
-// const checkComma = email.includes(",");
-// console.log(checkComma);
