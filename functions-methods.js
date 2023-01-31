@@ -32,7 +32,7 @@ console.log("------------Opdracht 2-----------------");
 
 function typeOfEmail (email) {
   if (email.includes("@novi-")) {
-      console.log("Student")
+      console.log("Student");
   } else if (email.includes("@novi.")){
       console.log("Medewerker");
   } else {
@@ -64,9 +64,19 @@ function checkEmailValidity(email) {
     return isValid;
 
 }
-const emailValid = checkEmailValidity("tes.smellink@novi.nl");
+const emailValid = checkEmailValidity("n.eeken@novi.nl");
+const emailValidFirst = checkEmailValidity("tessmellink@novi.nl");
+const emailValidSecond = checkEmailValidity("n.eekenanovi.nl");
+const emailValidThird = checkEmailValidity("n.eeken@novinl.");
+const emailValidFourth = checkEmailValidity("tessmellink@novi,nl");
+
 
 console.log(emailValid);
+console.log(emailValidFirst);
+console.log(emailValidSecond);
+console.log(emailValidThird);
+console.log(emailValidFourth);
+
 
 
 // const checkValue = email.includes("@");
