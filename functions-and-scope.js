@@ -19,7 +19,7 @@ let highGrades = 0;
 for (let i = 0; i < grades.length; i ++) {
    if (grades[i] >= 8) {
        const isCumLaude  = grades[i];
-       highGrades = highGrades + 1;
+       highGrades++;
         console.log(isCumLaude);
    }
 }
