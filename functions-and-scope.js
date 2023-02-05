@@ -79,7 +79,7 @@ for (let i = 0; i < grades.length; i++) {
     counter = counter + 1;
     sum += grades[i];
 }
-const averageGrades = sum / counter;
+const averageGrades = sum / grades.length;
 
 console.log(averageGrades);
 
