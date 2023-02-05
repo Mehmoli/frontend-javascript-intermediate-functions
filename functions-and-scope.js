@@ -129,7 +129,7 @@ console.log (Math.round(averageGrades));
 // ---- Verwachte uitkomst: 9
 console.log("------------Opdracht 3a-----------------");
 
-let max = 0;
+let max = grades[0];
 for (let i = 0; i < grades.length; i++) {
     if (grades[i] > max) {
         max = grades[i];
